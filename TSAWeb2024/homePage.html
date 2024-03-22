@@ -21,104 +21,71 @@
             <div class = "buttons">
                 <a class = "name" href = "homePage.html">GoGreen</a>
                 <!-- Change to actual pages later -->
-                <a href = "homePage.html">Your Home</a>
-                <a href = "homePage.html">Initiatives</a>
-                <a href = "homePage.html">Mini</a>
-                <a href = "homePage.html">About</a>
+                <a href = "home.html">Your Home</a>
+                <a href = "initiatives.html">Initiatives</a>
+                <a href = "game.html">Mini</a>
+                <a href = "about.html">About</a>
             </div>
         </div>
         
     </head>
     <body>
-        <!-- Image Slideshow-->
-        <div class = "slideshow-container">
-            <div class = "hero-image">
-                <div class = "mySlides fade">
-                  
-                    <img src = "matthew-smith-Rfflri94rs8-unsplash.jpg" style = "width: 100%">
-                </div>
-                <div class = "mySlides fade">
-                    
-                    <img src = "wood-anemone-4770523_1280.jpg" style = "width: 100%">
-                </div>
-                <div class = "mySlides fade">
-            
-                    <img src = "matthew-smith-Rfflri94rs8-unsplash.jpg" style = "width: 100%">
-                </div>
-                <a class = "prev" onclick= "plusSlides(-1)">&#10094;</a>
-                <a class = "next" onclick="plusSlides(1)">&#10095;</a>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-                <div class = "hero-text">
-                    <h1>Go Green for the environment</h1>
-                </div>
-            </div> 
-            
+        <!-- Images -->
+        <div class = "parent">
+            <div class = "column" id = "left">
+                <img src = "matthew-smith-Rfflri94rs8-unsplash.jpg">
+            </div>
+            <div class = "column">
+                <img src = "IMG_8504.JPG">
+            </div>
+            <div class = "column">
+                <img src = "wood-anemone-4770523_1280.jpg">
+            </div>
+
         </div>
-         <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            }
-        </script>
-        
+        <h1 style = "text-align: center; font-family: 'Concert One', sans-serif; color: rgb(112, 192, 66)">Go Green for the Environment!</h1>
+            
         <!-- Daily tips section -->
         <div class = "tips">
-            <h3>Daily Tips</h3>
-            <ul>
-                <li>blah</li>
-                <li>blah</li>
-                <li>blah</li>
+            <h3 style = "color: white">Daily Tips</h3>
+            <ul style = "text-align: left; color: white">
+                <li>Turn off lights and electronics when not in use 💡</li>
+                <br><li>Compost food scraps and yard waste to create nutrient-rich soil for your garden. 🌻</li>
+                <br><li>Reduce, reuse, and recycle: Buy less stuff, find new uses for old items, and recycle whenever possible. ♻️</li>
+                <br><li>Recycling one ton of paper can save around 17 trees. 🌳</li>
             </ul>
         </div>
-        <!-- facts section -->
+        <div class = "middle">
+            <!-- facts section -->
         <div class = "facts">
-            <h3>Know The Facts</h3>
-            <ul>
-                <li>blah</li>
-                <li>blah</li>
-                <li>blah</li>
+            <h3 style = "color: white">Know The Facts</h3>
+            
+            <ul style = "text-align: left;  color: white">
+                <li>Our planet is warming at an alarming rate, primarily due to human activities that release greenhouse gases like carbon dioxide.</li>
+                <br><li>Pollution is a major environmental concern, contaminating air, water, and soil.</li>
+                <br><li>The Inflation Reduction Act of 2022 offers tax credits for homeowners who make energy-efficient upgrades to their homes.</li>
             </ul>
         </div>
         <!-- Tax rebates section -->
         <div class = "tax">
-            <h3>How to File your Taxes</h3>
-            <ol>
-                <li>blah</li>
-                <li>blah</li>
-                <li>blah</li>
+            <div id = "quote">
+                <h1>"Homeowners Can Save Up to $3,200 <br>Annually on Taxes for <br>Energy Efficient Upgrades"</h1>
+            </div>
+            <div id = "offside" >
+                <h2>The Inflation Reduction Act of 2022 offers tax credits for homeowners who make energy-efficient upgrades to their homes.</h2>
+            <ol style = "text-align: center; list-style-position: inside; font-size: 18px;">
+                <li>Solar panels, heat pumps, insulation, windows</li>
+                <br><li>The Department of Energy also tracks state-specific rebate programs. Find more information <a href = "Initiatives.html">here</a></li>
+                <br><li>The credits have no lifetime dollar limits. Homeowners may claim the maximum annual credit every year that eligible improvements are made</li>
             </ol>
+            </div>
+            
         </div>
+        </div>
+        
     </body>
 
     <footer>
-        <h1>foot</h1>
+        
     </footer>
 </html>

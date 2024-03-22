@@ -1,0 +1,49 @@
+body
+{
+    background-color: #c3f48c;
+    margin: 0px;
+    
+}
+
+.buttons a
+{
+    color: white;
+    font-size: 50px;
+    font-family: 'Concert One', sans-serif;
+    padding-right: 50px;
+    
+}
+.buttons
+{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.navbar
+{
+    background-image: url("Screenshot\ 2024-01-25\ 115925.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+.name
+{
+    text-decoration: none;  
+}
+
+iframe
+{
+    margin-left: 170px;
+    margin-right: 200px;
+    margin-top: 30px;
+    width: 75%;
+    height: 500px;
+}
+h1
+{
+    text-align: center;
+    color: rgb(38, 62, 46);
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}

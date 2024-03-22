@@ -1,0 +1,38 @@
+body
+{
+    background-color: #c3f48c;
+    margin: 0px;
+    
+}
+
+.buttons a
+{
+    color: white;
+    font-size: 50px;
+    font-family: 'Concert One', sans-serif;
+    padding-right: 50px;
+    
+}
+.buttons
+{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.navbar
+{
+    background-image: url("Screenshot\ 2024-01-25\ 115925.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+.name
+{
+    text-decoration: none;  
+}
+.sources
+{
+    text-align: center;
+}
